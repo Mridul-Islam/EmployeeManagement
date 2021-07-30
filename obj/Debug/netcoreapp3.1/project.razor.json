@@ -14402,6 +14402,11 @@
   "RootNamespace": "EmployeeManagement",
   "Documents": [
     {
+      "FilePath": "e:\\Skill development\\Github links\\.NET work\\EmployeeManagement\\Views\\Home\\index.cshtml",
+      "TargetPath": "Views\\Home\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "e:\\Skill development\\Github links\\.NET work\\EmployeeManagement\\Views\\Home\\Details.cshtml",
       "TargetPath": "Views\\Home\\Details.cshtml",
       "FileKind": "mvc"

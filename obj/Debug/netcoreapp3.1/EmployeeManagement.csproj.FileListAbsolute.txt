@@ -164,3 +164,4 @@ E:\Skill development\Github links\.NET work\EmployeeManagement\bin\Debug\netcore
 E:\Skill development\Github links\.NET work\EmployeeManagement\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Skill development\Github links\.NET work\EmployeeManagement\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 E:\Skill development\Github links\.NET work\EmployeeManagement\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\index.cshtml.g.cs

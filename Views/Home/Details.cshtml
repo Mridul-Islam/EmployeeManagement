@@ -1,10 +1,23 @@
+@model EmployeeManagement.ViewModels.HomeDetailsVeiwModel
+
+
+
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
         <meta charset="UTF-8">
-        <title>Details</title>
     </head>
     <body>
-        <h1>hello from Home/Details.cshtml</h1>
+        <h3>@Model.pageTitle</h3>
+        <div>
+            Name: @Model.employee.Name
+        </div>
+        <div>
+            Email: @Model.employee.Email
+        </div>
+        <div>
+            Department: @Model.employee.Department
+        </div>
+
     </body>
 </html>
