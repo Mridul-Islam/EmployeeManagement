@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <meta charset="UTF-8" />
+        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="all" />
+        <link href="~/css/site.css" type="text/css" rel="stylesheet" media="all" />
+        <title>@ViewBag.Title</title>
+    </head>
+    <body>
+        <div class="container">
+            @RenderBody()
+        </div>
+        @if(IsSectionDefined("Scripts")){
+            @RenderSection("Scripts", required: true)
+        }
+        
+    </body>
+</html>

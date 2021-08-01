@@ -53,7 +53,7 @@ namespace EmployeeManagement
             //     endpoints.MapGet("/", async context =>
             //     {
             //         await context.Response
-            //         .WriteAsync("Hello world");
+            //         .WriteAsync("");
             //     });
             // });
 
