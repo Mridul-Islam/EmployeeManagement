@@ -3,17 +3,54 @@
     <head>
         <meta name="viewport" content="width=device-width" />
         <meta charset="UTF-8" />
-        <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="all" />
+        <environment include="Development">
+            <link href="~/lib/bootstrap/css/bootstrap.css" rel="stylesheet" media="all" />
+            <script src="~/lib/jquery/jquery.js"></script>
+            <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+        </environment>
+        <environment exclude="Development">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"
+            asp-fallback-href="~/lib/bootstrap/css/bootstrap.min.css"
+            asp-fallback-test-class="sr-only"
+            asp-fallback-test-property="position"
+            asp-fallback-test-value="absolute"
+            asp-suppress-fallback-integrity="true"
+            >
+        </environment>
         <link href="~/css/site.css" type="text/css" rel="stylesheet" media="all" />
         <title>@ViewBag.Title</title>
     </head>
     <body>
         <div class="container">
-            @RenderBody()
+            @* ------ Navbar Start ------ *@
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar brand" asp-controller="home" asp-action="index">
+                    <img src="https://www.prologicwebdesign.com/wp-content/uploads/2015/07/Employee-management.png" height="30px" width="30px" />
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a asp-action="index" asp-controller="home" class="nav-link">List</a>
+                        </li>
+                        <li class="nav-item">
+                            <a asp-action="create" asp-controller="home" class="nav-link">Create</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            @* ------ Navbar Finish ------ *@
+
+            <div>
+                @RenderBody()
+            </div>
+
+            @if(IsSectionDefined("Scripts")){
+                @RenderSection("Scripts", required: true)
+            }
         </div>
-        @if(IsSectionDefined("Scripts")){
-            @RenderSection("Scripts", required: true)
-        }
         
     </body>
 </html>
