@@ -169,3 +169,4 @@ E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcore
 E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
 E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+E:\Skill development\Github links\.NET work\EmployeeManagement\obj\Debug\netcoreapp3.1\Razor\Views\Home\Create.cshtml.g.cs
